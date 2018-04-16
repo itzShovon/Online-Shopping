@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.product_brand{
+/*    width: 10%;*/
+    margin-left: 3%;
+    float: left;
+}
+
+.cart{
+/*    width: 10%;*/
+    margin-left: 15%;
+    float: left;
+}
+
+td img{
+    width: 120px;
+    height: auto;
+}
+
+table{
+    background-color: aliceblue;
+    font-size: 20px;
+}
+
+table tr td{
+    padding: 10px;
+    text-align: right;
+/*    border-bottom: 1px solid black;*/
+}
+
+table tr td{
+    color: black;
+    padding: px 10px;
+/*    border-bottom: 1px solid black;*/
+}
+
+table tr th{
+    color: black;
+    padding: 5px 10px;
+    border-bottom: 1px solid black;
+}
+
+table tr td input{
+    color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.product_details{
+    
+}
+
+.item{
+    margin: 5px;
+    float: left;
+    background-color: dimgray;
+    padding: 10px 15px 20px;
+}
+
+.item h3{
+    text-align: left;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.item h4{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+/*    margin-bottom: 20px;*/
+}
+
+.item a{
+    clear: both;
+/*    padding-top: 200px;*/
+}
+
+.item img{
+    width: 100%;
+}
+
+.view_product_detail{
+    float: left;
+/*    display: none;*/
+/*    clear: both;*/
+    width: 75%;
+    margin: 0 auto;
+    padding: 5% 0 10%;
+    background-color: dimgray;
+    text-align: left;
+}
+
+.view_product_detail h4{
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.view_product_detail a{
+    position: relative;
+    top: 20px;
+}
+
+.view_product_detail img{
+    width: 60%;
+    float: left;
+    margin-right: 20px;
+}
+
+.update_account{
+    width: 80%;
+    background-color: dimgray;
+    margin: 40px auto;
+}
+
+.update_account table{
+    width: 100%;
+}
+
+.update_account table tr{
+    background-color: gray;
+}
+
+.update_account table td input{
+    width: 90%;
+    background-color: dimgray;
+}
+
+.update_account table td input:focus{
+    width: 90%;
+    background-color: lightgray;
+}
+
+.update_account button{
+    background-color: lightblue;
+    padding: 8px 15px;
+    margin: 5px auto;
+    font-size: 20px;
+}
