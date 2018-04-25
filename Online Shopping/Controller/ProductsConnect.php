@@ -8,6 +8,8 @@
         $login_user = $_SESSION['login_user'];
         
         
+        
+        
         if($id == '0'){
             if($brand == '0')
                 $statement = $db->prepare("SELECT * FROM products WHERE true");
@@ -18,6 +20,10 @@
             
 //            echo "<script type='text/javascript'>alert('holy crab...');</script>";
         }
+        
+        $statement1 = $db->prepare("SELECT DISTINCT product_brand FROM products ORDER BY product_brand ASC");
+        $statement1->execute();
+        $result1 = $statement1->fetchAll(PDO::FETCH_OBJ);
         
         $statement->execute();
         $result = $statement->fetchAll(PDO::FETCH_OBJ);

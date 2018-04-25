@@ -24,7 +24,7 @@
         <div class="product">
             <div class="product_brand">
                 <table>
-                    <?php foreach($result as $row){ ?>
+                    <?php foreach($result1 as $row){ ?>
                         <tr><td><a href="Products.php?b=<?php echo $row->product_brand; ?>&id=0"><?php echo $row->product_brand; ?></a></td></tr>
                     <?php } ?>
 <!--
@@ -51,7 +51,7 @@
                                     <a href="../Controller/AddToCart.php?id=<?php echo $row->product_id; ?>">Check Out</a>
                                     <?php if($_SESSION['login_mode'] == 1){ ?>
                                         <a href="../Controller/Delete.php?id=<?php echo $row->product_id; ?>">Delete</a>
-                                        <a href="Products.php">Update</a>
+                                        <a href="Products.php"><del>Update</del></a>
                                     <?php } ?>
                                 <?php } ?>
                             </div>
@@ -73,7 +73,7 @@
                                 <a href="Products.php">Check Out</a>
                                 <?php if($_SESSION['login_mode'] == 1){ ?>
                                     <a href="../Controller/Delete.php?id=<?php echo $row->product_id; ?>">Delete</a>
-                                    <a href="Products.php">Update</a>
+                                    <a href="Products.php"><del>Update</del></a>
                                 <?php } ?>
                             <?php } ?>
                         </div>

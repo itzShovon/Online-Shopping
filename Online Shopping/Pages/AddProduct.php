@@ -62,7 +62,7 @@
                     </tr>
 -->
                 </table>
-                <button type="submit" name="add_product" onclick="return RegisterValidation();">Update</button>
+                <button type="submit" name="add_product" onclick="return RegisterValidation();">Add</button>
                 <button type="reset">Reset</button>
             </form>
         </div>

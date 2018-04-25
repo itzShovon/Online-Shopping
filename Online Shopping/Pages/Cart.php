@@ -25,12 +25,12 @@
         <div class="cart">
             <table>
                 <tr>
-                    <th>Product No.</th>
-                    <th>Product Cover</th>
-                    <th>Product Name</th>
-                    <th>Quantity</th>
-                    <th>Update</th>
+                    <th>No.</th>
+                    <th>Cover</th>
+                    <th>Album</th>
+                    <th>Artist</th>
                     <th>Price</th>
+                    <th>Action</th>
                 </tr>
                 <?php foreach($result1 as $row){ ?>
                     <?php foreach($result2 as $row2){ ?>
@@ -40,8 +40,8 @@
                                 <td><img src="../Data/Images/Products/<?php echo $row->product_picture; ?>"></td>
                                 <td><?php echo $row->product_name; ?></td>
                                 <td><?php echo $row->product_brand; ?></td>
-                                <td><input type="text" placeholder="Amount?" name="amount" value="3"></td>
                                 <td>$<?php echo $row->product_price; ?></td>
+                                <td><a href="../Controller/DeleteCart.php?id=<?php echo $row->product_id; ?>">Remove</a></td>
                             </tr>
                         <?php } ?>
                     <?php } ?>

@@ -47,7 +47,7 @@
                 $message = "Thanks! information is Saved successfully.";
                 echo "<script type='text/javascript'>alert('$message');</script>";
                 
-                header('Products.php?b=0&id=0');
+                header('Location: Products.php?b=0&id=0');
             }
         }
         else{
